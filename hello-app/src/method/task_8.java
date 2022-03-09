@@ -9,26 +9,26 @@ import java.util.Scanner;
  */
 public class task_8 {
     public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("请输入号码:");
-//        int[] in = new int[7];
-//        for (int i = 0; i < 7; i++) {
-//            in[i] = sc.nextInt();
-//        }
+        Scanner sc = new Scanner(System.in);
+        System.out.println("请输入号码:");
+        int[] in = new int[7];
+        for (int i = 0; i < 7; i++) {
+            in[i] = sc.nextInt();
+        }
         int[] out = res1();
         System.out.println("中奖号码是:");
         System.out.print("[");
         for (int i = 0; i < 7; i++) {
             System.out.print(i == 6 ? out[i] : out[i] + ",");
         }
-        System.out.print("]");
-//        System.out.println("您的号码是:");
-//        System.out.print("[");
-//        for (int i = 0; i < 7; i++) {
-//            System.out.print(i == 6 ? in[i] : in[i] + ",");
-//        }
-//        System.out.print("]");
-//        res2(out,in);
+        System.out.println("]");
+        System.out.println("您的号码是:");
+        System.out.print("[");
+        for (int i = 0; i < 7; i++) {
+            System.out.print(i == 6 ? in[i] : in[i] + ",");
+        }
+        System.out.println("]");
+        res2(out,in);
     }
     //随机生成号码，前六位不能重复
     public static int[] res1(){
